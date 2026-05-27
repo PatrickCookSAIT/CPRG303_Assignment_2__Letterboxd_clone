@@ -76,6 +76,9 @@ const MainPage = () => {
           <Text style={styles.navBarText}>Journal</Text>
         </View>
       </View>
+      <View style={styles.sectionTitleContainer}>
+        <Text style={styles.sectionTitleText}>Popular this week</Text>
+      </View>
       <FlatList
         style={styles.popularMoviesContainer}
         data={popularMovies}
@@ -89,6 +92,9 @@ const MainPage = () => {
           />
         )}
       />
+      <View style={styles.sectionTitleContainer}>
+        <Text style={styles.sectionTitleText}>Letterboxd Video Store</Text>
+      </View>
     </View>
   );
 };
@@ -116,8 +122,20 @@ const styles = StyleSheet.create({
     color: "#fff",
     alignItems: "center",
   },
+  sectionTitleContainer: {
+    paddingTop: 15,
+    paddingLeft: 19,
+    paddingBottom: 5,
+  },
+  sectionTitleText: {
+    fontSize: 16,
+    fontFamily: "Arial",
+    fontWeight: "bold",
+    color: "#fff",
+  },
   popularMoviesContainer: {
-    padding: 15,
+    paddingLeft: 15,
+    paddingRight: 15,
   },
   popularMoviesImage: {
     width: 110,
