@@ -62,6 +62,20 @@ const MainPage = () => {
       <View style={styles.header}>
         <Text style={styles.headerText}>Letterboxd</Text>
       </View>
+      <View style={styles.navBar}>
+        <View style={styles.navBarTextContainerActive}>
+          <Text style={styles.navBarTextActive}>Films</Text>
+        </View>
+        <View style={styles.navBarTextContainer}>
+          <Text style={styles.navBarText}>Reviews</Text>
+        </View>
+        <View style={styles.navBarTextContainer}>
+          <Text style={styles.navBarText}>Lists</Text>
+        </View>
+        <View style={styles.navBarTextContainer}>
+          <Text style={styles.navBarText}>Journal</Text>
+        </View>
+      </View>
       <FlatList
         style={styles.popularMoviesContainer}
         data={popularMovies}
@@ -93,8 +107,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#ddd",
+    backgroundColor: "#000000",
   },
   headerText: {
     fontSize: 20,
@@ -111,5 +124,36 @@ const styles = StyleSheet.create({
     height: 165,
     borderRadius: 8,
     margin: 4,
+  },
+  navBar: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    backgroundColor: "#000000",
+  },
+  navBarTextContainer: {
+    width: "25%",
+    borderBottomWidth: 2,
+    borderBottomColor: "#000000",
+    alignItems: "center",
+  },
+  navBarTextContainerActive: {
+    width: "25%",
+    borderBottomWidth: 3,
+    borderBottomColor: "#10d659",
+    alignItems: "center",
+    borderTopLeftRadius: 100,
+    borderTopRightRadius: 100,
+  },
+  navBarText: {
+    color: "#7d858c",
+    fontSize: 12,
+    fontFamily: "Arial",
+    padding: 10,
+  },
+  navBarTextActive: {
+    color: "#fff",
+    fontSize: 12,
+    fontFamily: "Arial",
+    padding: 10,
   },
 });
