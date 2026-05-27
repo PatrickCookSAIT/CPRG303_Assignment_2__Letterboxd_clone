@@ -1,9 +1,9 @@
 import { StyleSheet, View } from "react-native";
-import MainPage from "../components/main-page";
+import TheRoom from "../components/the-room";
 export default function Index() {
   return (
     <View style={styles.container}>
-      <MainPage />
+      <TheRoom />
     </View>
   );
 }

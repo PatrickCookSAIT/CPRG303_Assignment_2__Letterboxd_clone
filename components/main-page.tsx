@@ -2,6 +2,7 @@ import React from "react";
 import {
     FlatList,
     Image,
+    ScrollView,
     StatusBar,
     StyleSheet,
     Text,
@@ -56,6 +57,58 @@ const popularMovies = [
       "https://a.ltrbxd.com/resized/film-poster/3/5/6/1/6/35616-hard-ticket-to-hawaii-0-1000-0-1500-crop.jpg?v=2cc58c9f58",
   },
 ];
+const videoStoreMovies = [
+  {
+    id: "1",
+    image:
+      "https://a.ltrbxd.com/resized/film-poster/4/6/1/5/9/46159-plan-9-from-outer-space-0-2000-0-3000-crop.jpg?v=3d447bc86a",
+  },
+  {
+    id: "2",
+    image:
+      "https://a.ltrbxd.com/resized/film-poster/3/2/0/0/9/0/320090-hot-bot-0-2000-0-3000-crop.jpg?v=e4c0774e94",
+  },
+  {
+    id: "3",
+    image:
+      "https://a.ltrbxd.com/resized/film-poster/3/4/9/4/1/34941-troll-2-0-2000-0-3000-crop.jpg?v=f24546a2b3",
+  },
+  {
+    id: "4",
+    image:
+      "https://a.ltrbxd.com/resized/film-poster/2/5/3/0/0/3/253003-cool-cat-saves-the-kids-0-2000-0-3000-crop.jpg?v=f0c5c800d7",
+  },
+  {
+    id: "5",
+    image:
+      "https://a.ltrbxd.com/resized/film-poster/3/0/9/1/8/3/309183-pass-thru-0-2000-0-3000-crop.jpg?v=d6d2d75d80",
+  },
+  {
+    id: "6",
+    image:
+      "https://a.ltrbxd.com/resized/sm/upload/ek/rx/ho/4o/rEWDgroPVLKHYJcL1bbwEpWyBkh-0-2000-0-3000-crop.jpg?v=8a343ce097",
+  },
+  {
+    id: "7",
+    image:
+      "https://a.ltrbxd.com/resized/film-poster/2/5/6/3/7/25637-no-holds-barred-0-2000-0-3000-crop.jpg?v=e398626a3a",
+  },
+  {
+    id: "8",
+    image:
+      "https://a.ltrbxd.com/resized/film-poster/4/6/7/5/7/46757-stop-or-my-mom-will-shoot-0-2000-0-3000-crop.jpg?v=e384237708",
+  },
+  {
+    id: "9",
+    image:
+      "https://a.ltrbxd.com/resized/film-poster/5/2/0/3/2/8/520328-megalopolis-0-2000-0-3000-crop.jpg?v=64ab4fa858",
+  },
+  {
+    id: "10",
+    image:
+      "https://a.ltrbxd.com/resized/film-poster/5/6/0/6/9/7/560697-madame-web-0-2000-0-3000-crop.jpg?v=305a4aead1",
+  },
+];
 const MainPage = () => {
   return (
     <View style={styles.container}>
@@ -76,14 +129,18 @@ const MainPage = () => {
           <Text style={styles.navBarText}>Journal</Text>
         </View>
       </View>
-      <View style={styles.sectionTitleContainer}>
-        <Text style={styles.sectionTitleText}>Popular this week</Text>
+      <View style={styles.sectionContainer}>
+        <View style={styles.sectionTitleContainer}>
+          <Text style={styles.sectionTitleText}>Popular this week</Text>
+        </View>
+        <Text style={styles.sectionTitleArrow}>{" > "}</Text>
       </View>
       <FlatList
         style={styles.popularMoviesContainer}
         data={popularMovies}
         keyExtractor={(item) => item.id}
         numColumns={3}
+        scrollEnabled={false}
         contentContainerStyle={styles.popularMoviesContainer}
         renderItem={({ item }) => (
           <Image
@@ -92,9 +149,28 @@ const MainPage = () => {
           />
         )}
       />
-      <View style={styles.sectionTitleContainer}>
-        <Text style={styles.sectionTitleText}>Letterboxd Video Store</Text>
+      <View style={styles.sectionContainer}>
+        <View style={styles.sectionTitleContainer}>
+          <Text style={styles.sectionTitleText}>Letterboxd Video Store</Text>
+          <Text style={styles.sectionSubtitleText}>
+            No late fees. Just late night discoveries.
+          </Text>
+        </View>
+        <Text style={styles.sectionTitleArrow}>{" > "}</Text>
       </View>
+      <ScrollView
+        style={styles.videoStoreMoviesContainer}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+      >
+        {videoStoreMovies.map((movie) => (
+          <Image
+            key={movie.id}
+            source={{ uri: movie.image }}
+            style={styles.videoStoreMoviesImage}
+          />
+        ))}
+      </ScrollView>
     </View>
   );
 };
@@ -121,27 +197,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#fff",
     alignItems: "center",
-  },
-  sectionTitleContainer: {
-    paddingTop: 15,
-    paddingLeft: 19,
-    paddingBottom: 5,
-  },
-  sectionTitleText: {
-    fontSize: 16,
-    fontFamily: "Arial",
-    fontWeight: "bold",
-    color: "#fff",
-  },
-  popularMoviesContainer: {
-    paddingLeft: 15,
-    paddingRight: 15,
-  },
-  popularMoviesImage: {
-    width: 110,
-    height: 165,
-    borderRadius: 8,
-    margin: 4,
   },
   navBar: {
     flexDirection: "row",
@@ -173,5 +228,55 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: "Arial",
     padding: 10,
+  },
+  sectionContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "90%",
+    paddingTop: 15,
+    paddingLeft: 19,
+    paddingBottom: 5,
+  },
+  sectionTitleContainer: {
+    flexDirection: "column",
+  },
+  sectionTitleText: {
+    fontSize: 16,
+    fontFamily: "Arial",
+    fontWeight: "bold",
+    color: "#fff",
+    textAlign: "left",
+  },
+  sectionSubtitleText: {
+    fontSize: 14,
+    fontFamily: "Arial",
+    color: "#7d858c",
+    textAlign: "left",
+  },
+  sectionTitleArrow: {
+    fontSize: 16,
+    fontFamily: "Arial",
+    color: "#7d858c",
+    alignSelf: "center",
+  },
+  popularMoviesContainer: {
+    paddingLeft: 15,
+    paddingRight: 15,
+    flexGrow: 0,
+  },
+  popularMoviesImage: {
+    width: "30%",
+    aspectRatio: 2 / 3,
+    borderRadius: 8,
+    margin: 4,
+  },
+  videoStoreMoviesContainer: {
+    flexGrow: 0,
+  },
+  videoStoreMoviesImage: {
+    width: 90,
+    aspectRatio: 2 / 3,
+    borderRadius: 8,
+    margin: 4,
   },
 });
