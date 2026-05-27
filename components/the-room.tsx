@@ -29,7 +29,9 @@ const TheRoom = () => {
           style={StyleSheet.absoluteFill}
         />
       </ImageBackground>
-      <Text style={styles.text}>test</Text>
+      <View style={styles.movieBioContainer}>
+        <Text style={styles.movieTitle}>The Room</Text>
+      </View>
     </View>
   );
 };
@@ -38,7 +40,7 @@ export default TheRoom;
 
 const styles = StyleSheet.create({
   container: {
-    //dont need top padding for status bar as phone info blends with background image
+    //don't need top padding for status bar as phone info blends with background image. found through trial and error
     flex: 1,
     width: "100%",
     backgroundColor: "#181b20",
@@ -50,11 +52,13 @@ const styles = StyleSheet.create({
     width: Dimensions.get("window").width,
     aspectRatio: 3 / 2,
   },
-  text: {
-    color: "white",
-    fontSize: 20,
-    fontWeight: "bold",
-    textAlign: "center",
-    marginTop: 20,
+  movieBioContainer: {
+    paddingTop: 15,
+  },
+  movieTitle: {
+    fontSize: 24,
+    fontFamily: "Arial",
+    fontWeight: "700",
+    color: "#fff",
   },
 });
