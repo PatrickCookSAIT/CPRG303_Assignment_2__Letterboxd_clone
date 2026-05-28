@@ -1,9 +1,9 @@
 import { StyleSheet, View } from "react-native";
-import TheRoom from "../components/the-room";
+import Movie from "../components/movie";
 export default function Index() {
   return (
     <View style={styles.container}>
-      <TheRoom />
+      <Movie />
     </View>
   );
 }
