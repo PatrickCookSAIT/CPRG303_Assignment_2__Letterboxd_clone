@@ -1,40 +1,35 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 //importing icons for navbar
-import { BsLightningCharge } from "react-icons/bs";
-import { CiSearch } from "react-icons/ci";
-import { GoPlusCircle } from "react-icons/go";
-import { IoPersonOutline } from "react-icons/io5";
-//current best approximation for the cascading rectangle from letterboxd
-import { HiRectangleStack } from "react-icons/hi2";
+import {
+  Feather,
+  Ionicons,
+  MaterialCommunityIcons
+} from "@expo/vector-icons";
 
 const AppNavBar = () => {
   return (
     <View style={styles.appNavBar}>
       <View style={styles.appNavBarIconsSelectedContainer}>
-        <Text style={styles.appNavBarIconsSelectedText}>
-          <HiRectangleStack />
-        </Text>
+        <MaterialCommunityIcons
+          name="view-carousel-outline"
+          style={styles.appNavBarIconsSelectedText}
+        />
       </View>
       <View style={styles.appNavBarIconsContainer}>
-        <Text style={styles.appNavBarIconsText}>
-          <CiSearch />
-        </Text>
+        <Feather name="search" style={styles.appNavBarIconsText} />
       </View>
       <View style={styles.appNavBarIconsContainer}>
-        <Text style={styles.appNavBarIconsPlusSignText}>
-          <GoPlusCircle />
-        </Text>
+        <Ionicons
+          name="add-circle-outline"
+          style={styles.appNavBarIconsPlusSignText}
+        />
       </View>
       <View style={styles.appNavBarIconsContainer}>
-        <Text style={styles.appNavBarIconsText}>
-          <BsLightningCharge />
-        </Text>
+        <Ionicons name="flash-outline" style={styles.appNavBarIconsText} />
       </View>
       <View style={styles.appNavBarIconsContainer}>
-        <Text style={styles.appNavBarIconsText}>
-          <IoPersonOutline />
-        </Text>
+        <Ionicons name="person-outline" style={styles.appNavBarIconsText} />
       </View>
     </View>
   );
