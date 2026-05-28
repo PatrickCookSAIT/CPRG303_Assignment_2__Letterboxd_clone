@@ -4,8 +4,8 @@ import React from "react";
 import { BsPersonCircle } from "react-icons/bs";
 import { GoStarFill } from "react-icons/go";
 import { GrPlayFill } from "react-icons/gr";
-
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
+import AppNavBar from "./app-nav-bar";
 
 const Movie = () => {
   return (
@@ -118,6 +118,7 @@ const Movie = () => {
           </Text>
         </View>
       </View>
+      <AppNavBar />
     </View>
   );
 };
