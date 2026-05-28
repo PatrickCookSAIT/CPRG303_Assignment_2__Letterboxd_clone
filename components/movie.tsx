@@ -1,7 +1,7 @@
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 //import icons for various buttons
-import { AntDesign, Ionicons, MaterialIcons } from "@expo/vector-icons";
+import { AntDesign, Feather, Ionicons, MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
 
 const Movie = () => {
@@ -119,6 +119,29 @@ const Movie = () => {
           <Text style={styles.loginButtonText}>
             Rate, log, review, add to list + more
           </Text>
+        </View>
+      </View>
+      <View style={styles.appNavBar}>
+        <View style={styles.appNavBarIconsSelectedContainer}>
+          <MaterialCommunityIcons
+            name="view-carousel-outline"
+            style={styles.appNavBarIconsSelectedText}
+          />
+        </View>
+        <View style={styles.appNavBarIconsContainer}>
+          <Feather name="search" style={styles.appNavBarIconsText} />
+        </View>
+        <View style={styles.appNavBarIconsContainer}>
+          <Ionicons
+            name="add-circle-outline"
+            style={styles.appNavBarIconsPlusSignText}
+          />
+        </View>
+        <View style={styles.appNavBarIconsContainer}>
+          <Ionicons name="flash-outline" style={styles.appNavBarIconsText} />
+        </View>
+        <View style={styles.appNavBarIconsContainer}>
+          <Ionicons name="person-outline" style={styles.appNavBarIconsText} />
         </View>
       </View>
     </View>
