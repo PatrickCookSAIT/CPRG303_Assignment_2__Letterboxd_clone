@@ -8,7 +8,6 @@ import {
   Text,
   View,
 } from "react-native";
-import AppNavBar from "./app-nav-bar";
 
 //Popular this week movies
 const popularMovies = [
@@ -172,7 +171,6 @@ const MainPage = () => {
           />
         ))}
       </ScrollView>
-      <AppNavBar />
     </View>
   );
 };
