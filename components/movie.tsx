@@ -276,7 +276,6 @@ const styles = StyleSheet.create({
   },
 
   ratingsBarContainer: {
-    flexGrow: 1,
     flexDirection: "row",
     alignItems: "flex-end",
     height: 40,
@@ -284,6 +283,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#181b20",
     borderBottomColor: "#181b20",
     marginLeft: 1,
+    width: "8%",
   },
   ratingBarOne: {
     backgroundColor: "#445565",
