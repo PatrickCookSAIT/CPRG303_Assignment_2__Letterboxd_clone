@@ -1,9 +1,7 @@
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 //import icons for various buttons
-import { BsPersonCircle } from "react-icons/bs";
-import { GoStarFill } from "react-icons/go";
-import { GrPlayFill } from "react-icons/gr";
+import { AntDesign, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
 
 const Movie = () => {
@@ -30,7 +28,10 @@ const Movie = () => {
           <View style={styles.movieTrailerAndLengthContainer}>
             <View style={styles.movieTailerButton}>
               <View style={styles.trailerPlayIconContainer}>
-                <GrPlayFill style={styles.trailerPlayIcon} />
+                <MaterialIcons
+                  name="play-arrow"
+                  style={styles.trailerPlayIcon}
+                />
               </View>
               <Text style={styles.movieTrailerText}>TRAILER</Text>
             </View>
@@ -60,7 +61,7 @@ const Movie = () => {
         <Text style={styles.ratingsTitleText}>RATINGS</Text>
         <View style={styles.ratingsRatingContainer}>
           <View style={styles.ratingsOneStarIconContainer}>
-            <GoStarFill style={styles.ratingsStarIcon} />
+            <AntDesign name="star" style={styles.ratingsStarIcon} />
           </View>
           {/* 10 ratings bar for bargraph showing 1 to 10 ratings */}
           <View style={styles.ratingsBarContainer}>
@@ -98,11 +99,11 @@ const Movie = () => {
               <Text style={styles.ratingsScoreText}>2.6</Text>
             </View>
             <View style={styles.ratingsFiveStarIconContainer}>
-              <GoStarFill style={styles.ratingsStarIcon} />
-              <GoStarFill style={styles.ratingsStarIcon} />
-              <GoStarFill style={styles.ratingsStarIcon} />
-              <GoStarFill style={styles.ratingsStarIcon} />
-              <GoStarFill style={styles.ratingsStarIcon} />
+              <AntDesign name="star" style={styles.ratingsStarIcon} />
+              <AntDesign name="star" style={styles.ratingsStarIcon} />
+              <AntDesign name="star" style={styles.ratingsStarIcon} />
+              <AntDesign name="star" style={styles.ratingsStarIcon} />
+              <AntDesign name="star" style={styles.ratingsStarIcon} />
             </View>
           </View>
         </View>
@@ -110,7 +111,10 @@ const Movie = () => {
       <View style={styles.loginContainer}>
         <View style={styles.loginButtonContainer}>
           <View style={styles.loginProfileIconContainer}>
-            <BsPersonCircle style={styles.loginProfileIcon} />
+            <Ionicons
+              name="person-circle-outline"
+              style={styles.loginProfileIcon}
+            />
           </View>
           <Text style={styles.loginButtonText}>
             Rate, log, review, add to list + more
