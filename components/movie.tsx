@@ -50,8 +50,8 @@ const Movie = () => {
           CAN YOU EVER REALLY TRUST ANYONE?
         </Text>
         <Text style={styles.synopsisBodyText}>
-          What a story! Everyone's favourite customer is back in a brand new
-          adventure. Johnny is a successful banker with great respect and
+          What a story! Everyone&apos;s favourite customer is back in a brand
+          new adventure. Johnny is a successful banker with great respect and
           dedication to the people in his life, especially his future wife Lisa.
           The happy-go-lucky football tosser sees his world tearing him apart
           when everyone betrays him. And now he is fed up with this world!
