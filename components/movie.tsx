@@ -1,8 +1,21 @@
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 //import icons for various buttons
-import { AntDesign, Feather, Ionicons, MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
-import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
+import {
+  AntDesign,
+  Feather,
+  Ionicons,
+  MaterialCommunityIcons,
+  MaterialIcons,
+} from "@expo/vector-icons";
+import {
+  Image,
+  ImageBackground,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 
 const Movie = () => {
   return (
@@ -13,6 +26,17 @@ const Movie = () => {
         }}
         style={styles.backgroundImage}
       >
+        <View style={styles.topNavButtonContainer}>
+          <View style={styles.topNavButtonArrowContainer}>
+            <Ionicons name="arrow-back" style={styles.topNavButtonArrow} />
+          </View>
+          <View style={styles.topNavButtonDotsContainer}>
+            {/* alt 0183 for symbol "·" */}
+            <Text style={styles.topNavButtonDot}>·</Text>
+            <Text style={styles.topNavButtonDot}>·</Text>
+            <Text style={styles.topNavButtonDot}>·</Text>
+          </View>
+        </View>
         <LinearGradient
           //3 transparent transitions to match style of letterboxd app
           colors={["transparent", "transparent", "transparent", "#181b20"]}
@@ -162,6 +186,45 @@ const styles = StyleSheet.create({
     width: "100%",
     aspectRatio: 4 / 2,
   },
+  topNavButtonContainer: {
+    flexDirection: "row",
+    paddingTop: StatusBar.currentHeight,
+    marginTop: 15,
+  },
+  topNavButtonArrowContainer: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: 10,
+    backgroundColor: "#46586680",
+  },
+  topNavButtonArrow: {
+    color: "#fff",
+  },
+  topNavButtonDotsContainer: {
+    flexDirection: "column",
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "transparent",
+    margin: 0,
+    padding: 0,
+    marginRight: 10,
+    marginLeft: "auto",
+  },
+  topNavButtonDot: {
+    color: "#fff",
+    fontSize: 20,
+    lineHeight: 10,
+    textAlignVertical: "center",
+    margin: 0,
+    padding: 0,
+    fontWeight: "bold",
+  },
   movieBioContainer: {
     flexDirection: "row",
   },
@@ -263,6 +326,7 @@ const styles = StyleSheet.create({
   ratingsContainer: {
     padding: 10,
     backgroundColor: "#181b20",
+    marginTop: 5,
   },
   ratingsTitleText: {
     fontSize: 10,
@@ -368,6 +432,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderColor: "#445565",
     borderTopWidth: 1,
+    marginBottom: 5,
   },
   loginButtonContainer: {
     flexDirection: "row",
