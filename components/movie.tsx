@@ -1,7 +1,6 @@
 //References available at page end
 
 import { LinearGradient } from "expo-linear-gradient";
-import React from "react";
 //import icons for various buttons
 import {
   AntDesign,
