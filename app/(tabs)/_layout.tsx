@@ -6,7 +6,7 @@ const TabsLayout = () => {
     <Tabs
       screenOptions={{
         //active vs inactive colours
-        tabBarActiveTintColor: "#f59e0b",
+        tabBarActiveTintColor: "#46b8fd",
         tabBarInactiveTintColor: "#94a3ba",
 
         //tab bar visual style
@@ -33,12 +33,12 @@ const TabsLayout = () => {
     >
       <Tabs.Screen
         //this name has to exactly match the file name without extension
-        name="MainPage"
+        name="index"
         options={{
-          title: "Home",
+          headerShown: false,
           tabBarIcon: ({ color, size, focused }) => (
             <Ionicons
-              name={focused ? "home" : "home-outline"}
+              name={focused ? "grid" : "grid-outline"}
               size={size}
               color={color}
             />

@@ -40,9 +40,11 @@ const MainPage = () => {
         </View>
         <Text style={styles.sectionTitleArrow}>{" > "}</Text>
       </View>
+
       <FlatList
         style={styles.popularMoviesContainer}
-        data={MOVIES}
+        //restrict number of movies shown here to 9
+        data={MOVIES.slice(0, 9)}
         keyExtractor={(item) => item.code}
         numColumns={3}
         scrollEnabled={false}
