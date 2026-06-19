@@ -1,6 +1,6 @@
 import { Feather, Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
-
+import { StyleSheet, View } from "react-native";
 const TabsLayout = () => {
   return (
     <Tabs
@@ -18,17 +18,7 @@ const TabsLayout = () => {
           paddingLeft: 10,
           paddingRight: 10,
         },
-        tabBarLabelStyle: {
-          fontSize: 11,
-          fontWeight: "600",
-        },
-        headerStyle: {
-          backgroundColor: "#003865",
-        },
-        headerTintColor: "#ffffff",
-        headerTitleStyle: {
-          fontWeight: "700",
-        },
+        tabBarShowLabel: false,
       }}
     >
       <Tabs.Screen
@@ -37,11 +27,19 @@ const TabsLayout = () => {
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size, focused }) => (
-            <Ionicons
-              name={focused ? "grid" : "grid-outline"}
-              size={size}
-              color={color}
-            />
+            <View
+              style={
+                focused
+                  ? styles.appNavBarIconsContainerFocused
+                  : styles.appNavBarIconsContainer
+              }
+            >
+              <Ionicons
+                name={focused ? "grid" : "grid-outline"}
+                size={size}
+                color={color}
+              />
+            </View>
           ),
         }}
       />
@@ -51,11 +49,19 @@ const TabsLayout = () => {
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size, focused }) => (
-            <Feather
-              name={focused ? "search" : "search"}
-              size={size}
-              color={color}
-            />
+            <View
+              style={
+                focused
+                  ? styles.appNavBarIconsContainerFocused
+                  : styles.appNavBarIconsContainer
+              }
+            >
+              <Feather
+                name={focused ? "search" : "search"}
+                size={size}
+                color={color}
+              />
+            </View>
           ),
         }}
       />
@@ -76,11 +82,19 @@ const TabsLayout = () => {
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size, focused }) => (
-            <Ionicons
-              name={focused ? "flash" : "flash-outline"}
-              size={size}
-              color={color}
-            />
+            <View
+              style={
+                focused
+                  ? styles.appNavBarIconsContainerFocused
+                  : styles.appNavBarIconsContainer
+              }
+            >
+              <Ionicons
+                name={focused ? "flash" : "flash-outline"}
+                size={size}
+                color={color}
+              />
+            </View>
           ),
         }}
       />
@@ -90,11 +104,19 @@ const TabsLayout = () => {
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size, focused }) => (
-            <Ionicons
-              name={focused ? "person" : "person-outline"}
-              size={size}
-              color={color}
-            />
+            <View
+              style={
+                focused
+                  ? styles.appNavBarIconsContainerFocused
+                  : styles.appNavBarIconsContainer
+              }
+            >
+              <Ionicons
+                name={focused ? "person" : "person-outline"}
+                size={size}
+                color={color}
+              />
+            </View>
           ),
         }}
       />
@@ -103,3 +125,25 @@ const TabsLayout = () => {
 };
 
 export default TabsLayout;
+
+const styles = StyleSheet.create({
+  appNavBarIconsContainer: {
+    borderRadius: 20,
+    height: 40,
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft: 22,
+    paddingRight: 22,
+    alignItems: "center",
+  },
+  appNavBarIconsContainerFocused: {
+    backgroundColor: "#334454",
+    borderRadius: 20,
+    height: 40,
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft: 22,
+    paddingRight: 22,
+    alignItems: "center",
+  },
+});
