@@ -39,7 +39,7 @@ export const MOVIES = [
     runTime: "100 mins",
     synopsisTitle: "SOMETIMES FATE HAS US FINDING OURSELVES",
     synopsis:
-      "Neil Breen acts, directs, stars, writes and carters in this new film by Neil Breen. As a young boy, Neil Breen discovers a magical stone alongside his childhood friend. But time seperates them. When hit by a car, Neil Breen begins to rediscover his power and reconnect with his friend he thought he lost. All while uncovering an international scheme involving the world elite including the president of the bank.",
+      "Neil Breen acts, directs, stars, writes and owns a Ferrari in this new film by Neil Breen. As a young boy, Neil Breen discovers a magical stone alongside his childhood friend. But time seperates them. When hit by a car, Neil Breen begins to rediscover his power and reconnect with his friend he thought he lost. All while uncovering an international conspiracy involving the world elite including the president of the bank.",
   },
   {
     code: "MegaSharkVSGiantOctopus",

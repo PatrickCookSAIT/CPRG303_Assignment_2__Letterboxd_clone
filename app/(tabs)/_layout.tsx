@@ -1,4 +1,4 @@
-import { Ionicons } from "@expo/vector-icons";
+import { Feather, Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
 const TabsLayout = () => {
@@ -13,7 +13,7 @@ const TabsLayout = () => {
         tabBarStyle: {
           backgroundColor: "#445565",
           borderTopColor: "#1e293b",
-          height: "12%",
+          height: "9%",
           paddingTop: 15,
           paddingLeft: 10,
           paddingRight: 10,
@@ -33,12 +33,65 @@ const TabsLayout = () => {
     >
       <Tabs.Screen
         //this name has to exactly match the file name without extension
-        name="index"
+        name="movies"
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size, focused }) => (
             <Ionicons
               name={focused ? "grid" : "grid-outline"}
+              size={size}
+              color={color}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        //this name has to exactly match the file name without extension
+        name="search"
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => (
+            <Feather
+              name={focused ? "search" : "search"}
+              size={size}
+              color={color}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        //this name has to exactly match the file name without extension
+        name="add"
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => (
+            //note, the plus symbol is always green and is the only icon to use this colour. It also has no focused vs unfocused version
+            <Ionicons name="add-circle-outline" size={size} color="#14ce66" />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        //this name has to exactly match the file name without extension
+        name="activity"
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => (
+            <Ionicons
+              name={focused ? "flash" : "flash-outline"}
+              size={size}
+              color={color}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        //this name has to exactly match the file name without extension
+        name="profile"
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => (
+            <Ionicons
+              name={focused ? "person" : "person-outline"}
               size={size}
               color={color}
             />
