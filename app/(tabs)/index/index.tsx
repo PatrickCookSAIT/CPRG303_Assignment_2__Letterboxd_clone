@@ -3,14 +3,14 @@
 import { router } from "expo-router";
 import React from "react";
 import {
-    FlatList,
-    Image,
-    Pressable,
-    ScrollView,
-    StatusBar,
-    StyleSheet,
-    Text,
-    View,
+  FlatList,
+  Image,
+  Pressable,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native";
 import { MOVIES } from "../../../data/moviedata";
 
@@ -57,7 +57,7 @@ const MainPage = () => {
         renderItem={({ item }) => (
           <Pressable
             style={styles.popularMoviesBtn}
-            onPress={() => router.push(`/movies/${item.code}`)}
+            onPress={() => router.push(`/${item.code}`)}
           >
             <Image
               source={{ uri: item.posterImage }}
@@ -85,7 +85,7 @@ const MainPage = () => {
         {MOVIES.map((movie) => (
           <Pressable
             key={movie.code}
-            onPress={() => router.push(`/movies/${movie.code}`)}
+            onPress={() => router.push(`/${movie.code}`)}
           >
             <Image
               source={{ uri: movie.posterImage }}

@@ -5,13 +5,13 @@ import { LinearGradient } from "expo-linear-gradient";
 import { AntDesign, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { Link, useLocalSearchParams, useRouter } from "expo-router";
 import {
-    Image,
-    ImageBackground,
-    Pressable,
-    StatusBar,
-    StyleSheet,
-    Text,
-    View,
+  Image,
+  ImageBackground,
+  Pressable,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native";
 import { MOVIES } from "../../../data/moviedata";
 
@@ -43,7 +43,7 @@ const MovieDetailPage = () => {
         <View style={styles.topNavButtonContainer}>
           <Pressable
             onPress={() => {
-              router.push("/movies");
+              router.back();
             }}
             style={styles.topNavButtonArrowContainer}
           >

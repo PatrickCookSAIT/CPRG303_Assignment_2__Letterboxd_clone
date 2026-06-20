@@ -13,7 +13,7 @@ const TabsLayout = () => {
         tabBarStyle: {
           backgroundColor: "#445565",
           borderTopColor: "#1e293b",
-          height: 70,
+          height: "10%",
           paddingTop: 15,
           paddingLeft: 10,
           paddingRight: 10,
@@ -23,7 +23,7 @@ const TabsLayout = () => {
     >
       <Tabs.Screen
         //this name has to exactly match the file name without extension
-        name="movies"
+        name="index"
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size, focused }) => (
