@@ -18,10 +18,15 @@ const MainPage = () => {
   //const {id} = useLocalSearchParams<{id: string}>();
   //const movie = MOVIES.find((movie) => movie.code === id);
   return (
-    <View style={styles.container}>
+    <ScrollView
+      style={styles.container}
+      contentContainerStyle={styles.contentContainer}
+      showsVerticalScrollIndicator={false}
+    >
       <View style={styles.header}>
         <Text style={styles.headerText}>Letterboxd</Text>
       </View>
+
       <View style={styles.navBar}>
         <View style={styles.navBarTextContainerActive}>
           <Text style={styles.navBarTextActive}>Films</Text>
@@ -36,6 +41,7 @@ const MainPage = () => {
           <Text style={styles.navBarText}>Journal</Text>
         </View>
       </View>
+
       <View style={styles.sectionContainer}>
         <View style={styles.sectionTitleContainer}>
           <Text style={styles.sectionTitleText}>Popular this week</Text>
@@ -44,8 +50,6 @@ const MainPage = () => {
       </View>
 
       <FlatList
-        style={styles.popularMoviesContainer}
-        //restrict number of movies shown here to 9
         data={MOVIES.slice(0, 9)}
         keyExtractor={(item) => item.code}
         numColumns={3}
@@ -62,6 +66,7 @@ const MainPage = () => {
           </Pressable>
         )}
       />
+
       <View style={styles.sectionContainer}>
         <View style={styles.sectionTitleContainer}>
           <Text style={styles.sectionTitleText}>Letterboxd Video Store</Text>
@@ -71,10 +76,11 @@ const MainPage = () => {
         </View>
         <Text style={styles.sectionTitleArrow}>{" > "}</Text>
       </View>
+
       <ScrollView
-        style={styles.videoStoreMoviesContainer}
-        horizontal={true}
+        horizontal
         showsHorizontalScrollIndicator={false}
+        style={styles.videoStoreMoviesContainer}
       >
         {MOVIES.map((movie) => (
           <Pressable
@@ -88,13 +94,16 @@ const MainPage = () => {
           </Pressable>
         ))}
       </ScrollView>
-    </View>
+    </ScrollView>
   );
 };
 
 export default MainPage;
 
 const styles = StyleSheet.create({
+  contentContainer: {
+    paddingBottom: 30,
+  },
   container: {
     flex: 1,
     backgroundColor: "#181b20",
