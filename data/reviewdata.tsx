@@ -4,7 +4,7 @@ export const REVIEWS = [
     movieCode: "TheRoom",
     userName: "TommyFan",
     userPFP:
-      "https://images.pexels.com/photos/35224529/pexels-photo-35224529.jpeg",
+      "https://images.pexels.com/photos/7790144/pexels-photo-7790144.jpeg?_gl=1*17qqfl8*_ga*NTU5MDY2NTA0LjE3ODAwMTc3NzE.*_ga_8JE65Q40S6*czE3ODIwNjU5MzkkbzMkZzEkdDE3ODIwNjY1MjYkajU5JGwwJGgw",
     stars: 5,
     text: "Tommy is the first true genius film maker since Neil Breen. It shows with his careful approach to film making and the art with which he approaches every scene. Still, the version with Johnny as a vampire would have been better",
   },

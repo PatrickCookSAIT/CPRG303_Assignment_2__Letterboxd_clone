@@ -65,7 +65,12 @@ const reviews = () => {
                   <Text style={styles.reviewCardHeaderUser}>
                     {review.userName}
                   </Text>
-                  <Image style={styles.reviewCardHeaderUserPFP}></Image>
+                  <Image
+                    style={styles.reviewCardHeaderUserPFP}
+                    source={{
+                      uri: review.userPFP,
+                    }}
+                  ></Image>
                 </View>
               </View>
               <Text style={styles.reviewCardStarsContainer}>
@@ -200,9 +205,17 @@ const styles = StyleSheet.create({
     fontFamily: "Arial",
     fontWeight: "200",
     color: "#7d858c",
+    marginRight: 4,
+    paddingTop: 4,
   },
-  reviewCardHeaderUserPFP: {},
-  reviewCardStarsContainer: {},
+  reviewCardHeaderUserPFP: {
+    height: 20,
+    width: 20,
+    borderRadius: 10,
+  },
+  reviewCardStarsContainer: {
+    color: "green",
+  },
   reviewCardReviewContainer: {
     flexDirection: "row",
   },
