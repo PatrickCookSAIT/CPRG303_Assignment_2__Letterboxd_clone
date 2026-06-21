@@ -86,6 +86,34 @@ const Profile = () => {
           </View>
         </View>
       </View>
+      <View style={styles.sectionContainer}>
+        <View style={styles.ratingsTitleContainer}>
+          <Text style={styles.ratingsTitle}>RATINGS</Text>
+        </View>
+        <View style={styles.ratingsBarFullContainer}>
+          <View style={styles.ratingsStarIconContainer}>
+            <Text style={styles.ratingsStarIcon}>★</Text>
+          </View>
+          <View style={styles.ratingsBarContainer}>
+            <View style={styles.ratingBarOne}></View>
+          </View>
+          <View style={styles.ratingsBarContainer}>
+            <View style={styles.ratingBarTwo}></View>
+          </View>
+          <View style={styles.ratingsBarContainer}>
+            <View style={styles.ratingBarThree}></View>
+          </View>
+          <View style={styles.ratingsBarContainer}>
+            <View style={styles.ratingBarFour}></View>
+          </View>
+          <View style={styles.ratingsBarContainer}>
+            <View style={styles.ratingBarFive}></View>
+          </View>
+          <View style={styles.ratingsStarIconContainer}>
+            <Text style={styles.ratingsStarIcon}>★★★★★</Text>
+          </View>
+        </View>
+      </View>
     </ScrollView>
   );
 };
@@ -213,5 +241,60 @@ const styles = StyleSheet.create({
   },
   moreActivityArrowText: {
     color: "#7d858c",
+  },
+  ratingsTitleContainer: {
+    marginLeft: 5,
+    paddingBottom: 2,
+  },
+  ratingsTitle: {
+    color: "#7d858c",
+    fontFamily: "Ariel",
+  },
+  ratingsBarFullContainer: {
+    flexDirection: "row",
+  },
+  ratingsBarContainer: {
+    flexDirection: "row",
+    alignItems: "flex-end",
+    height: 40,
+    borderBottomWidth: 1,
+    backgroundColor: "#181b20",
+    borderBottomColor: "#181b20",
+    marginLeft: 1,
+    width: "16%",
+  },
+  ratingBarOne: {
+    backgroundColor: "#445565",
+    height: "70%",
+    width: "100%",
+  },
+  ratingBarTwo: {
+    backgroundColor: "#445565",
+    height: "60%",
+    width: "100%",
+  },
+  ratingBarThree: {
+    backgroundColor: "#445565",
+    height: "10%",
+    width: "100%",
+  },
+  ratingBarFour: {
+    backgroundColor: "#445565",
+    height: "20%",
+    width: "100%",
+  },
+  ratingBarFive: {
+    backgroundColor: "#445565",
+    height: "10%",
+    width: "100%",
+  },
+  ratingsStarIcon: {
+    color: "#0fdc66",
+    fontSize: 8,
+  },
+  ratingsStarIconContainer: {
+    marginRight: 5,
+    marginLeft: 5,
+    paddingTop: 30,
   },
 });
