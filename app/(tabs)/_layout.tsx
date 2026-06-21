@@ -130,6 +130,7 @@ const styles = StyleSheet.create({
   appNavBarIconsContainer: {
     borderRadius: 20,
     height: 40,
+    width: 80,
     paddingTop: 5,
     paddingBottom: 5,
     paddingLeft: 22,
@@ -140,6 +141,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#334454",
     borderRadius: 20,
     height: 40,
+    width: 80,
     paddingTop: 5,
     paddingBottom: 5,
     paddingLeft: 22,
