@@ -1,7 +1,7 @@
-import UnderConstruction from "@/components/under-construction";
 import { router } from "expo-router";
 import React from "react";
 import {
+    Image,
     Pressable,
     ScrollView,
     StatusBar,
@@ -44,7 +44,19 @@ const reviews = () => {
           <Text style={styles.navBarText}>Journal</Text>
         </Pressable>
       </View>
-      <UnderConstruction />
+      <View style={styles.reviewPageHeaderContainer}>
+        <Text style={styles.reviewPageHeaderText}>Popular This Week</Text>
+      </View>
+      <View style={styles.reviewCardContainer}>
+        <View style={styles.reviewCardHeaderContainer}>
+          <Text style={styles.reviewCardHeaderMovieTitle}>The Room</Text>
+          <Text style={styles.reviewCardHeaderMovieYear}>2003</Text>
+          <View style={styles.reviewCardHeaderUserContainer}>
+            <Text style={styles.reviewCardHeaderUser}>Mopher120</Text>
+            <Image style={styles.reviewCardHeaderUserPFP}></Image>
+          </View>
+        </View>
+      </View>
     </ScrollView>
   );
 };
@@ -106,4 +118,46 @@ const styles = StyleSheet.create({
     fontFamily: "Arial",
     padding: 10,
   },
+  reviewPageHeaderContainer: {
+    alignItems: "flex-start",
+    marginTop: 5,
+    marginBottom: 5,
+    paddingTop: 10,
+    paddingLeft: 5,
+  },
+  reviewPageHeaderText: {
+    fontSize: 16,
+    fontFamily: "Arial",
+    fontWeight: "bold",
+    color: "#fff",
+    textAlign: "left",
+  },
+  reviewCardContainer: {
+    marginTop: 12,
+    paddingLeft: 5,
+    borderBottomColor: "#445565",
+    flexDirection: "column",
+  },
+  reviewCardHeaderContainer: {
+    flexDirection: "row",
+  },
+  reviewCardHeaderMovieTitle: {
+    fontSize: 14,
+    fontFamily: "Arial",
+    fontWeight: "800",
+    color: "#a2a9af",
+  },
+  reviewCardHeaderMovieYear: {
+    fontSize: 14,
+    fontFamily: "Arial",
+    color: "#7d858c",
+    marginLeft: 4,
+    paddingTop: 3,
+  },
+  reviewCardHeaderUserContainer: {},
+  reviewCardHeaderUser: {
+    alignItems: "flex-end",
+    textAlign: "left",
+  },
+  reviewCardHeaderUserPFP: {},
 });
