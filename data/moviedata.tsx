@@ -73,7 +73,7 @@ export const MOVIES = [
     code: "HotFrosty",
     title: "Hot Frosty",
     posterImage:
-      "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/7/3/4/2/3/tmdb/eabjqu3JzL7j172ojXKYevNUaFa-1200-1200-675-675-crop-000000.jpg?v=caf630dbea",
+      "https://a.ltrbxd.com/resized/film-poster/1/1/7/3/4/2/3/1173423-hot-frosty-0-1000-0-1500-crop.jpg?v=3c1c42b6f5",
     stillBackdrop:
       "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/7/3/4/2/3/tmdb/eabjqu3JzL7j172ojXKYevNUaFa-1200-1200-675-675-crop-000000.jpg?v=caf630dbea",
     releaseYear: "2024",
@@ -200,7 +200,7 @@ export const MOVIES = [
     posterImage:
       "https://a.ltrbxd.com/resized/sm/upload/ek/rx/ho/4o/rEWDgroPVLKHYJcL1bbwEpWyBkh-0-2000-0-3000-crop.jpg?v=8a343ce097",
     stillBackdrop:
-      "https://a.ltrbxd.com/resized/sm/upload/ek/rx/ho/4o/rEWDgroPVLKHYJcL1bbwEpWyBkh-0-2000-0-3000-crop.jpg?v=8a343ce097",
+      "https://a.ltrbxd.com/resized/sm/upload/u6/6g/r6/c4/roar-1200-1200-675-675-crop-000000.jpg?v=993f4a3c90",
     releaseYear: "1981",
     director: "Noel Marshall",
     runTime: "95 mins",
