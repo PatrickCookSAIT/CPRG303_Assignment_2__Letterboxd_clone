@@ -2,7 +2,8 @@ export const USERS = [
   {
     code: "PatrickCook",
     name: "PatrickCook",
-    userPFP: "",
+    userPFP:
+      "https://images.pexels.com/photos/7790029/pexels-photo-7790029.jpeg",
     recentActivity: [
       {
         movieCode: "TheRoom",
