@@ -2,8 +2,10 @@ export const MOVIES = [
   {
     code: "TheRoom",
     title: "The Room",
+    //[1]
     posterImage:
       "https://a.ltrbxd.com/resized/sm/upload/qq/yi/i3/dk/aUC39cFC2KO8CJ0EV0ijIJRr3PT-0-1000-0-1500-crop.jpg?v=95164ef310",
+    //[2]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/ay/jb/b5/xa/the-room-1200-1200-675-675-crop-000000.jpg?v=b2e17b62e4",
     releaseYear: "2003",
@@ -16,8 +18,10 @@ export const MOVIES = [
   {
     code: "CoolCatFightsCoronaVirus",
     title: "Cool Cat Fights Corona Virus",
+    //[3]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/1/0/6/8/8/5/9/1068859-cool-cat-fights-coronavirus-0-1000-0-1500-crop.jpg?v=5a93d9f990",
+    //[4]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/xv/cw/l4/5f/77IjWG7ofataJjxLYTT8TYP6C44-1200-1200-675-675-crop-000000.jpg?v=b3d6ac89c3",
     releaseYear: "2021",
@@ -30,8 +34,10 @@ export const MOVIES = [
   {
     code: "FatefulFindings",
     title: "Fateful Findings",
+    //[5]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/1/4/1/8/6/6/141866-fateful-findings-0-1000-0-1500-crop.jpg?v=e6a020c8e1",
+    //[6]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/2n/20/5x/h3/fateful-findings-1200-1200-675-675-crop-000000.jpg?v=e38abcc289",
     releaseYear: "2013",
@@ -44,8 +50,10 @@ export const MOVIES = [
   {
     code: "MegaSharkVSGiantOctopus",
     title: "Mega Shark vs. Giant Octopus",
+    //[7]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/4/0/6/9/6/40696-mega-shark-vs-giant-octopus-0-1000-0-1500-crop.jpg?v=7c30243e33",
+    //[8]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/ya/ns/u4/lx/MegaShark-1200-1200-675-675-crop-000000.jpg?v=8bd486628c",
     releaseYear: "2009",
@@ -58,8 +66,10 @@ export const MOVIES = [
   {
     code: "2025TheWorldEnslavedByAVirus",
     title: "2025: The World Enslaved by a Virus",
+    //[9]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/7/2/7/4/4/9/727449-2025-the-world-enslaved-by-a-virus-0-1000-0-1500-crop.jpg?v=7ba371068c",
+    //[10]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/sk/q6/yt/g7/2025-1200-1200-675-675-crop-000000.jpg?v=130a1c6e5c",
     releaseYear: "2021",
@@ -72,8 +82,10 @@ export const MOVIES = [
   {
     code: "HotFrosty",
     title: "Hot Frosty",
+    //[11]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/1/1/7/3/4/2/3/1173423-hot-frosty-0-1000-0-1500-crop.jpg?v=3c1c42b6f5",
+    //[12]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/alternative-backdrop/1/1/7/3/4/2/3/tmdb/eabjqu3JzL7j172ojXKYevNUaFa-1200-1200-675-675-crop-000000.jpg?v=caf630dbea",
     releaseYear: "2024",
@@ -86,8 +98,10 @@ export const MOVIES = [
   {
     code: "Superfast!",
     title: "Superfast!",
+    //[13]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/2/5/2/4/5/1/252451-superfast--0-1000-0-1500-crop.jpg?v=295ae6a988",
+    //[14]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/22/vu/h7/na/Superfast-1200-1200-675-675-crop-000000.jpg?v=a58c517f0a",
     releaseYear: "2015",
@@ -100,8 +114,10 @@ export const MOVIES = [
   {
     code: "HardTicketToHawaii",
     title: "Hard Ticket to Hawaii",
+    //[15]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/3/5/6/1/6/35616-hard-ticket-to-hawaii-0-1000-0-1500-crop.jpg?v=2cc58c9f58",
+    //[16]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/jn/hz/pm/65/hard%20ticket-1200-1200-675-675-crop-000000.jpg?v=e3ebc42d54",
     releaseYear: "1987",
@@ -114,8 +130,10 @@ export const MOVIES = [
   {
     code: "SamuraiCop",
     title: "Samurai Cop",
+    //[17]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/1/4/5/8/1458-samurai-cop-0-1000-0-1500-crop.jpg?v=2003ba3e4b",
+    //[18]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/16/fi/lv/iy/samurai-cop-1200-1200-675-675-crop-000000.jpg?v=1884d4e30b",
     releaseYear: "1991",
@@ -128,9 +146,12 @@ export const MOVIES = [
   {
     code: "Plan9FromOuterSpace",
     title: "Plan 9 From Outer Space",
+    //[19]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/4/6/1/5/9/46159-plan-9-from-outer-space-0-2000-0-3000-crop.jpg?v=3d447bc86a",
-    stillBackdrop: "",
+    //[20]
+    stillBackdrop:
+      "https://a.ltrbxd.com/resized/sm/upload/ix/5h/2p/ld/plan%209-1200-1200-675-675-crop-000000.jpg?v=e4a4053179",
     releaseYear: "1957",
     director: "Edward D. Wood Jr.",
     runTime: "78 mins",
@@ -141,6 +162,7 @@ export const MOVIES = [
   {
     code: "HotBot",
     title: "Hot Bot",
+    //[21]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/3/2/0/0/9/0/320090-hot-bot-0-2000-0-3000-crop.jpg?v=e4c0774e94",
     //main letterboxd page has no backdrop image
@@ -154,8 +176,10 @@ export const MOVIES = [
   {
     code: "Troll2",
     title: "Troll 2",
+    //[22]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/3/4/9/4/1/34941-troll-2-0-2000-0-3000-crop.jpg?v=f24546a2b3",
+    //[23]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/c4/i0/76/u5/troll2-1200-1200-675-675-crop-000000.jpg?v=89b0fe2703",
     releaseYear: "1990",
@@ -169,8 +193,10 @@ export const MOVIES = [
   {
     code: "CoolCatSavesTheKids",
     title: "Cool Cat Saves the Kids",
+    //[24]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/2/5/3/0/0/3/253003-cool-cat-saves-the-kids-0-2000-0-3000-crop.jpg?v=f0c5c800d7",
+    //[25]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/wa/ao/ga/l1/cool-cat-saves-the-kids-1200-1200-675-675-crop-000000.jpg?v=ca5b4acd9",
     releaseYear: "2015",
@@ -183,8 +209,10 @@ export const MOVIES = [
   {
     code: "PassThru",
     title: "Pass Thru",
+    //[26]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/3/0/9/1/8/3/309183-pass-thru-0-2000-0-3000-crop.jpg?v=d6d2d75d80",
+    //[27]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/rn/s0/04/ap/pass%20thru-1200-1200-675-675-crop-000000.jpg?v=3fd8e3d82c",
     releaseYear: "2016",
@@ -197,8 +225,10 @@ export const MOVIES = [
   {
     code: "Roar",
     title: "Roar",
+    //[28]
     posterImage:
       "https://a.ltrbxd.com/resized/sm/upload/ek/rx/ho/4o/rEWDgroPVLKHYJcL1bbwEpWyBkh-0-2000-0-3000-crop.jpg?v=8a343ce097",
+    //[29]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/u6/6g/r6/c4/roar-1200-1200-675-675-crop-000000.jpg?v=993f4a3c90",
     releaseYear: "1981",
@@ -211,8 +241,10 @@ export const MOVIES = [
   {
     code: "NoHoldsBarred",
     title: "No Holds Barred",
+    //[30]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/2/5/6/3/7/25637-no-holds-barred-0-2000-0-3000-crop.jpg?v=e398626a3a",
+    //[31]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/cp/58/yt/29/1upyFSMYBu2kKeGqPNoE039Wvn3-1200-1200-675-675-crop-000000.jpg?v=25c8240856",
     releaseYear: "1989",
@@ -225,8 +257,10 @@ export const MOVIES = [
   {
     code: "StopOrMyMomWillShoot",
     title: "Stop or My Mom Will Shoot",
+    //[32]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/4/6/7/5/7/46757-stop-or-my-mom-will-shoot-0-2000-0-3000-crop.jpg?v=e384237708",
+    //[33]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/z7/0p/gg/9b/stop-1200-1200-675-675-crop-000000.jpg?v=3bb3ee363c",
     releaseYear: "1992",
@@ -239,8 +273,10 @@ export const MOVIES = [
   {
     code: "Megalopolis",
     title: "Megalopolis",
+    //[34]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/5/2/0/3/2/8/520328-megalopolis-0-2000-0-3000-crop.jpg?v=64ab4fa858",
+    //[35]
     stillBackdrop:
       "https://a.ltrbxd.com/resized/sm/upload/2j/7y/oq/xj/mega-1200-1200-675-675-crop-000000.jpg?v=d8737327e7",
     releaseYear: "2024",
@@ -253,9 +289,12 @@ export const MOVIES = [
   {
     code: "MadameWeb",
     title: "Madame Web",
+    //[36]
     posterImage:
       "https://a.ltrbxd.com/resized/film-poster/5/6/0/6/9/7/560697-madame-web-0-2000-0-3000-crop.jpg?v=305a4aead1",
-    stillBackdrop: "",
+    //[37]
+    stillBackdrop:
+      "https://a.ltrbxd.com/resized/sm/upload/2r/v9/d2/tg/madame%20web-1200-1200-675-675-crop-000000.jpg?v=8c5f410c79",
     releaseYear: "2024",
     director: "SJ Clarkson",
     runTime: "117 mins",
@@ -266,15 +305,92 @@ export const MOVIES = [
 ];
 
 /*
-{
-    code: "",
-    title: "",
-    posterImage: "",
-    stillBackdrop: "",
-    releaseYear: "",
-    director: "",
-    runTime: "",
-    synopsisTitle: "",
-    synopsis: "",
-},
+Bibliography
+[1] “The Room Film Poster.” Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/qq/yi/i3/dk/aUC39cFC2KO8CJ0EV0ijIJRr3PT-0-1000-0-1500-crop.jpg?v=95164ef310
+
+[2] “The Room Rooftop Still.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/ay/jb/b5/xa/the-room-1200-1200-675-675-crop-000000.jpg?v=b2e17b62e4
+
+[3] “Cool Cat Fights Corona Virus Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/1/0/6/8/8/5/9/1068859-cool-cat-fights-coronavirus-0-1000-0-1500-crop.jpg?v=5a93d9f990
+
+[4] “Cool Cat Fights Corona Virus Dirty Dog Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/xv/cw/l4/5f/77IjWG7ofataJjxLYTT8TYP6C44-1200-1200-675-675-crop-000000.jpg?v=b3d6ac89c3
+
+
+[5] “Fateful Findings Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/1/4/1/8/6/6/141866-fateful-findings-0-1000-0-1500-crop.jpg?v=e6a020c8e1
+
+[6] “Fateful Findings Neil Breen Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available:  https://a.ltrbxd.com/resized/sm/upload/2n/20/5x/h3/fateful-findings-1200-1200-675-675-crop-000000.jpg?v=e38abcc289
+
+[7] “Mega Shark Versus Giant Octopus Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/4/0/6/9/6/40696-mega-shark-vs-giant-octopus-0-1000-0-1500-crop.jpg?v=7c30243e33
+
+[8] “Mega Shark Versus Giant Octopus Battle Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/ya/ns/u4/lx/MegaShark-1200-1200-675-675-crop-000000.jpg?v=8bd486628c
+
+[9] “2025: The World Enslaved by a Virus Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/7/2/7/4/4/9/727449-2025-the-world-enslaved-by-a-virus-0-1000-0-1500-crop.jpg?v=7ba371068c
+[10] “2025: The World Enslaved by a Virus Happy Boy Still. Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/sk/q6/yt/g7/2025-1200-1200-675-675-crop-000000.jpg?v=130a1c6e5c
+
+[11] “Hot Frosty Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/1/1/7/3/4/2/3/1173423-hot-frosty-0-1000-0-1500-crop.jpg?v=3c1c42b6f5
+
+[12] “Hot Frosty Conversation Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/alternative-backdrop/1/1/7/3/4/2/3/tmdb/eabjqu3JzL7j172ojXKYevNUaFa-1200-1200-675-675-crop-000000.jpg?v=caf630dbea
+
+[13] “Superfast! Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/2/5/2/4/5/1/252451-superfast--0-1000-0-1500-crop.jpg?v=295ae6a988
+
+[14] “Superfast! Handshake Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/22/vu/h7/na/Superfast-1200-1200-675-675-crop-000000.jpg?v=a58c517f0a
+
+
+[15] “Hard Ticket to Hawaii Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/3/5/6/1/6/35616-hard-ticket-to-hawaii-0-1000-0-1500-crop.jpg?v=2cc58c9f58
+
+[16] “Hard Ticket to Hawaii Film Poster.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/jn/hz/pm/65/hard%20ticket-1200-1200-675-675-crop-000000.jpg?v=e3ebc42d54
+
+[17] “Samurai Cop Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/1/4/5/8/1458-samurai-cop-0-1000-0-1500-crop.jpg?v=2003ba3e4b
+[18] “Samurai Cop Partners Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/16/fi/lv/iy/samurai-cop-1200-1200-675-675-crop-000000.jpg?v=1884d4e30b
+
+
+[19] “Plan 9 from Outer Space Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/4/6/1/5/9/46159-plan-9-from-outer-space-0-2000-0-3000-crop.jpg?v=3d447bc86a
+
+[20] “Plan 9 from Outer Space Black and White Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/ix/5h/2p/ld/plan%209-1200-1200-675-675-crop-000000.jpg?v=e4a4053179
+
+
+[21] “Hot Bot Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/3/2/0/0/9/0/320090-hot-bot-0-2000-0-3000-crop.jpg?v=e4c0774e94
+
+[22] “Troll 2 Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/3/4/9/4/1/34941-troll-2-0-2000-0-3000-crop.jpg?v=f24546a2b3
+
+[23] “Troll 2 Goblin Army Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/c4/i0/76/u5/troll2-1200-1200-675-675-crop-000000.jpg?v=89b0fe2703
+
+[24] “Cool Cat Saves the Kids Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/2/5/3/0/0/3/253003-cool-cat-saves-the-kids-0-2000-0-3000-crop.jpg?v=f0c5c800d7
+
+[25] “Cool Cat Saves the Kids Rapping Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available:  https://a.ltrbxd.com/resized/sm/upload/wa/ao/ga/l1/cool-cat-saves-the-kids-1200-1200-675-675-crop-000000.jpg?v=ca5b4acd9
+
+[26] “Pass Thru Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/3/0/9/1/8/3/309183-pass-thru-0-2000-0-3000-crop.jpg?v=d6d2d75d80
+
+[27] “Pass Thru A Man and His Lion Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/rn/s0/04/ap/pass%20thru-1200-1200-675-675-crop-000000.jpg?v=3fd8e3d82c
+
+
+[28] “Roar Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/ek/rx/ho/4o/rEWDgroPVLKHYJcL1bbwEpWyBkh-0-2000-0-3000-crop.jpg?v=8a343ce097
+
+[29] “Roar Lions Still.” Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/u6/6g/r6/c4/roar-1200-1200-675-675-crop-000000.jpg?v=993f4a3c90
+
+[30] “No Holds Barred Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/2/5/6/3/7/25637-no-holds-barred-0-2000-0-3000-crop.jpg?v=e398626a3a
+
+[31] “No Holds Barred Wrestler Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/cp/58/yt/29/1upyFSMYBu2kKeGqPNoE039Wvn3-1200-1200-675-675-crop-000000.jpg?v=25c8240856
+
+
+[32] “Stop or My Mom Will Shoot Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/4/6/7/5/7/46757-stop-or-my-mom-will-shoot-0-2000-0-3000-crop.jpg?v=e384237708
+
+[33] “Stop or My Mom Will Shoot Mom With A Gun Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/z7/0p/gg/9b/stop-1200-1200-675-675-crop-000000.jpg?v=3bb3ee363c
+
+[34] “Megalopolis Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/5/2/0/3/2/8/520328-megalopolis-0-2000-0-3000-crop.jpg?v=64ab4fa858
+
+[35] “Megalopolis Spyglass Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/2j/7y/oq/xj/mega-1200-1200-675-675-crop-000000.jpg?v=d8737327e7
+
+[36] “Madame Web Film Poster.”  Letterboxd. Accessed: May 27, 2026. [Online]. Available: https://a.ltrbxd.com/resized/film-poster/5/6/0/6/9/7/560697-madame-web-0-2000-0-3000-crop.jpg?v=305a4aead1
+
+[37] “Madame Web Spider Crew Still.”  Letterboxd. Accessed: June 17, 2026. [Online]. Available: https://a.ltrbxd.com/resized/sm/upload/2r/v9/d2/tg/madame%20web-1200-1200-675-675-crop-000000.jpg?v=8c5f410c79
+
+
+
+
+
+
+
+
+
+
 */
