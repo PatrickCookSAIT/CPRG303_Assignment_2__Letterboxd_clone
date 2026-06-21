@@ -1,3 +1,4 @@
+import { Ionicons } from "@expo/vector-icons";
 import React from "react";
 import { ScrollView, StatusBar, StyleSheet, Text, View } from "react-native";
 
@@ -9,6 +10,8 @@ const profile = () => {
       showsVerticalScrollIndicator={false}
     >
       <View style={styles.header}>
+        <Ionicons style={styles.headerGear} name="settings-outline" />
+
         <Text style={styles.headerText}>Letterboxd</Text>
       </View>
 
@@ -44,17 +47,20 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
     padding: 15,
     backgroundColor: "#000000",
+  },
+  headerGear: {
+    color: "#fff",
+    fontSize: 20,
+    marginRight: 5,
   },
   headerText: {
     fontSize: 20,
     fontFamily: "Arial",
     fontWeight: "bold",
     color: "#fff",
-    alignItems: "center",
+    alignItems: "flex-start",
   },
   navBar: {
     flexDirection: "row",
