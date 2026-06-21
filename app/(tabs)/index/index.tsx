@@ -15,8 +15,6 @@ import {
 import { MOVIES } from "../../../data/moviedata";
 
 const MainPage = () => {
-  //const {id} = useLocalSearchParams<{id: string}>();
-  //const movie = MOVIES.find((movie) => movie.code === id);
   return (
     <ScrollView
       style={styles.container}
