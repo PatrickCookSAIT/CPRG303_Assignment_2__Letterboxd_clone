@@ -73,7 +73,7 @@ const Profile = () => {
                   style={styles.recentActivityMoviesImage}
                 />
                 <Text style={styles.recentActivityMoviesStars}>
-                  {"*".repeat(activity.movieRating)}
+                  {"★".repeat(activity.movieRating)}
                 </Text>
               </View>
             );

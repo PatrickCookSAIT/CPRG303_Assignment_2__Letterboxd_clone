@@ -74,7 +74,7 @@ const reviews = () => {
                 </View>
               </View>
               <Text style={styles.reviewCardStarsContainer}>
-                {"*".repeat(review.stars)}
+                {"★".repeat(review.stars)}
               </Text>
               <View style={styles.reviewCardReviewContainer}>
                 <Pressable
@@ -214,7 +214,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   reviewCardStarsContainer: {
-    color: "green",
+    paddingLeft: 2,
+    color: "#10d659",
   },
   reviewCardReviewContainer: {
     flexDirection: "row",
