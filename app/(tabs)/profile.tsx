@@ -40,14 +40,19 @@ const Profile = () => {
         </View>
       </View>
       <View style={styles.sectionContainer}>
-        <Image
-          style={styles.profilePicture}
-          source={{
-            uri: user?.userPFP,
-          }}
-        ></Image>
+        <View style={styles.profilePictureContainer}>
+          <Image
+            style={styles.profilePicture}
+            source={{
+              uri: user?.userPFP,
+            }}
+          ></Image>
+        </View>
       </View>
       <View style={styles.sectionContainer}>
+        <View style={styles.recentActivityTitleContainer}>
+          <Text style={styles.recentActivityTitle}>RECENT ACTIVITY</Text>
+        </View>
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -74,6 +79,12 @@ const Profile = () => {
             );
           })}
         </ScrollView>
+        <View style={styles.moreActivityContainer}>
+          <Text style={styles.moreActivityTitle}>More activity</Text>
+          <View style={styles.moreActivityArrowContainer}>
+            <Text style={styles.moreActivityArrowText}> {" > "} </Text>
+          </View>
+        </View>
       </View>
     </ScrollView>
   );
@@ -145,12 +156,33 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#445565",
     flexDirection: "column",
+    paddingLeft: 5,
+    paddingRight: 5,
   },
-  profilePicture: {},
-  recentActivityTitle: {},
+  profilePictureContainer: {
+    alignItems: "center",
+    justifyContent: "center",
+    paddingTop: 15,
+    paddingBottom: 15,
+  },
+  profilePicture: {
+    height: 70,
+    width: 70,
+    borderRadius: 35,
+    alignItems: "center",
+  },
+  recentActivityTitleContainer: {
+    marginLeft: 5,
+    paddingBottom: 2,
+  },
+  recentActivityTitle: {
+    color: "#7d858c",
+    fontFamily: "Ariel",
+  },
   recentActivityMoviesandStarsContainer: {
     flexDirection: "column",
-    alignItems: "center",
+    alignItems: "flex-start",
+    paddingLeft: 2,
   },
   recentActivityMoviesContainer: {
     flexGrow: 0,
@@ -162,10 +194,24 @@ const styles = StyleSheet.create({
     margin: 4,
   },
   recentActivityMoviesStars: {
-    color: "green",
+    color: "#7d858c",
+    paddingLeft: 5,
   },
-  moreActivityContainer: {},
-  moreActivityTitle: {},
-  moreActivityArrowContainer: {},
-  moreActivityArrowText: {},
+  moreActivityContainer: {
+    marginTop: 5,
+    marginBottom: 10,
+    flexDirection: "row",
+    paddingLeft: 5,
+    width: "100%",
+  },
+  moreActivityTitle: {
+    color: "#7d858c",
+    fontWeight: "600",
+  },
+  moreActivityArrowContainer: {
+    marginLeft: "auto",
+  },
+  moreActivityArrowText: {
+    color: "#7d858c",
+  },
 });
