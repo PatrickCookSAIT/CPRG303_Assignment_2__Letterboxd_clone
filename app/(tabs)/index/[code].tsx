@@ -24,7 +24,7 @@ const MovieDetailPage = () => {
     return (
       <View style={styles.container}>
         <Text style={styles.movieTitle}> Movie {code} Not Found</Text>
-        <Link href="/movies" asChild>
+        <Link href="/" asChild>
           <Pressable style={styles.movieTrailerAndLengthContainer}>
             <Text style={styles.movieTrailerText}>Back to main page</Text>
           </Pressable>

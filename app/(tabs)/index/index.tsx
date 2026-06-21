@@ -28,18 +28,27 @@ const MainPage = () => {
       </View>
 
       <View style={styles.navBar}>
-        <View style={styles.navBarTextContainerActive}>
+        <Pressable style={styles.navBarTextContainerActive}>
           <Text style={styles.navBarTextActive}>Films</Text>
-        </View>
-        <View style={styles.navBarTextContainer}>
+        </Pressable>
+        <Pressable
+          onPress={() => router.push("reviews")}
+          style={styles.navBarTextContainer}
+        >
           <Text style={styles.navBarText}>Reviews</Text>
-        </View>
-        <View style={styles.navBarTextContainer}>
+        </Pressable>
+        <Pressable
+          onPress={() => router.push("lists")}
+          style={styles.navBarTextContainer}
+        >
           <Text style={styles.navBarText}>Lists</Text>
-        </View>
-        <View style={styles.navBarTextContainer}>
+        </Pressable>
+        <Pressable
+          onPress={() => router.push("journal")}
+          style={styles.navBarTextContainer}
+        >
           <Text style={styles.navBarText}>Journal</Text>
-        </View>
+        </Pressable>
       </View>
 
       <View style={styles.sectionContainer}>
