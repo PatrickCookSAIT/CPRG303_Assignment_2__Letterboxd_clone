@@ -2,12 +2,12 @@ import UnderConstruction from "@/components/under-construction";
 import { router } from "expo-router";
 import React from "react";
 import {
-    Pressable,
-    ScrollView,
-    StatusBar,
-    StyleSheet,
-    Text,
-    View,
+  Pressable,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native";
 
 const lists = () => {

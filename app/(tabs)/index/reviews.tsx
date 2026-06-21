@@ -9,6 +9,8 @@ import {
     Text,
     View,
 } from "react-native";
+import { MOVIES } from "../../../data/moviedata";
+import { REVIEWS } from "../../../data/reviewdata";
 
 const reviews = () => {
   return (
@@ -44,19 +46,49 @@ const reviews = () => {
           <Text style={styles.navBarText}>Journal</Text>
         </Pressable>
       </View>
-      <View style={styles.reviewPageHeaderContainer}>
-        <Text style={styles.reviewPageHeaderText}>Popular This Week</Text>
-      </View>
-      <View style={styles.reviewCardContainer}>
-        <View style={styles.reviewCardHeaderContainer}>
-          <Text style={styles.reviewCardHeaderMovieTitle}>The Room</Text>
-          <Text style={styles.reviewCardHeaderMovieYear}>2003</Text>
-          <View style={styles.reviewCardHeaderUserContainer}>
-            <Text style={styles.reviewCardHeaderUser}>Mopher120</Text>
-            <Image style={styles.reviewCardHeaderUserPFP}></Image>
-          </View>
+      <ScrollView showsHorizontalScrollIndicator={false}>
+        <View style={styles.reviewPageHeaderContainer}>
+          <Text style={styles.reviewPageHeaderText}>Popular This Week</Text>
         </View>
-      </View>
+        {REVIEWS.map((review) => {
+          const movie = MOVIES.find((m) => m.code === review.movieCode);
+          return (
+            <View key={review.code} style={styles.reviewCardContainer}>
+              <View style={styles.reviewCardHeaderContainer}>
+                <Text style={styles.reviewCardHeaderMovieTitle}>
+                  {movie?.title}
+                </Text>
+                <Text style={styles.reviewCardHeaderMovieYear}>
+                  {movie?.releaseYear}
+                </Text>
+                <View style={styles.reviewCardHeaderUserContainer}>
+                  <Text style={styles.reviewCardHeaderUser}>
+                    {review.userName}
+                  </Text>
+                  <Image style={styles.reviewCardHeaderUserPFP}></Image>
+                </View>
+              </View>
+              <Text style={styles.reviewCardStarsContainer}>
+                {"*".repeat(review.stars)}
+              </Text>
+              <View style={styles.reviewCardReviewContainer}>
+                <Pressable
+                  onPress={() => router.push(`/${movie.code}`)}
+                  style={styles.reviewCardReviewMoviePosterContainer}
+                >
+                  <Image
+                    source={{
+                      uri: movie?.posterImage,
+                    }}
+                    style={styles.reviewCardReviewMoviePosterImage}
+                  ></Image>
+                </Pressable>
+                <Text style={styles.reviewCardReviewText}>{review.text}</Text>
+              </View>
+            </View>
+          );
+        })}
+      </ScrollView>
     </ScrollView>
   );
 };
@@ -123,7 +155,7 @@ const styles = StyleSheet.create({
     marginTop: 5,
     marginBottom: 5,
     paddingTop: 10,
-    paddingLeft: 5,
+    paddingLeft: 10,
   },
   reviewPageHeaderText: {
     fontSize: 16,
@@ -134,9 +166,11 @@ const styles = StyleSheet.create({
   },
   reviewCardContainer: {
     marginTop: 12,
-    paddingLeft: 5,
+    paddingLeft: 10,
     borderBottomColor: "#445565",
+    borderBottomWidth: 1,
     flexDirection: "column",
+    paddingBottom: 7,
   },
   reviewCardHeaderContainer: {
     flexDirection: "row",
@@ -151,13 +185,41 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: "Arial",
     color: "#7d858c",
-    marginLeft: 4,
+    marginLeft: 5,
     paddingTop: 3,
   },
-  reviewCardHeaderUserContainer: {},
+  reviewCardHeaderUserContainer: {
+    flexDirection: "row",
+    marginLeft: "auto",
+    marginRight: 10,
+  },
   reviewCardHeaderUser: {
     alignItems: "flex-end",
     textAlign: "left",
+    fontSize: 12,
+    fontFamily: "Arial",
+    fontWeight: "200",
+    color: "#7d858c",
   },
   reviewCardHeaderUserPFP: {},
+  reviewCardStarsContainer: {},
+  reviewCardReviewContainer: {
+    flexDirection: "row",
+  },
+  reviewCardReviewMoviePosterContainer: {
+    flexGrow: 0,
+  },
+  reviewCardReviewMoviePosterImage: {
+    width: 90,
+    aspectRatio: 2 / 3,
+    borderRadius: 8,
+  },
+  reviewCardReviewText: {
+    marginLeft: 8,
+    fontSize: 14,
+    fontFamily: "Arial",
+    color: "#7d858c",
+    flex: 1,
+    flexWrap: "wrap",
+  },
 });
